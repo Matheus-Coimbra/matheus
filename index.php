@@ -22,10 +22,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Jogo</a>
+                        <a class="nav-link" href="#">Pacientes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?p=list">Usuarios</a>
+                        <a class="nav-link" href="#">Usuarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?p=endereco">Endereço</a>
                     </li>
                 </ul>
 
@@ -66,16 +69,9 @@
     <?php
     include("pages/mensagens.php");
     if (isset($_GET['p'])) {
-        if ($_GET['p'] == "cadastro")
-            include("pages/add-usuario.php");
-        if ($_GET['p'] == "list")
-            include("pages/list-usuario.php");
-        if ($_GET['p'] == "entrar")
-            include("pages/login.php");
-        if ($_GET['p'] == "sair")
-            include("pages/logout.php");
-        if ($_GET['p'] == "perfil")
-            include("pages/perfil-usuario.php");
+        if ($_GET['p'] == "endereco")
+            include("pages/add-endereco.php");
+       
     } else {
         include("pages/home.php");
     }
