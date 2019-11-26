@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Modelo Site</title>
+    <title>Modelo Site :: Hospital</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
@@ -28,7 +28,7 @@
                         <a class="nav-link" href="#">Usuarios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?p=endereco">Endereço</a>
+                        <a class="nav-link" href="index.php?p=endereco">Endereco</a>
                     </li>
                 </ul>
 
@@ -40,10 +40,10 @@
 
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?p=cadastro">Cadastro</a>
+                            <a class="nav-link" href="#">Cadastro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?p=entrar">Entrar</a>
+                            <a class="nav-link" href="#">Entrar</a>
                         </li>
                     </ul>
 
@@ -51,12 +51,12 @@
 
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?p=perfil">
+                            <a class="nav-link" href="#">
                                 <?= $_SESSION['user']->nome; ?>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?p=sair">Sair</a>
+                            <a class="nav-link" href="#">Sair</a>
                         </li>
                     </ul>
 
@@ -71,7 +71,6 @@
     if (isset($_GET['p'])) {
         if ($_GET['p'] == "endereco")
             include("pages/add-endereco.php");
-       
     } else {
         include("pages/home.php");
     }
