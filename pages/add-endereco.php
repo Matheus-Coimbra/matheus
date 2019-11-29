@@ -2,24 +2,24 @@
     <form method="POST">
         <div class="form-group">
             <label for="cep">CEP</label>
-            <input type="text" class="form-control" id="cep" name="cep" onblur="pesquisacep(this.value)" maxlength="9" require>
+            <input type="text" class="form-control" id="cep" name="cep" onblur="pesquisacep(this.value)" maxlength="9" required>
         </div>
         <div class="form-group">
             <label for="logradouro">Endereço</label>
-            <input type="text" class="form-control" id="logradouro" name="logradouro" require>
+            <input type="text" class="form-control" id="logradouro" name="logradouro" required>
         </div>
         <div class="form-group">
             <label for="bairro">Bairro</label>
-            <input type="text" class="form-control" id="bairro" name="bairro" require>
+            <input type="text" class="form-control" id="bairro" name="bairro" required>
         </div>
         <div class="form-group">
             <label for="cidade">Cidade</label>
-            <input type="text" class="form-control" id="cidade" name="cidade" require>
+            <input type="text" class="form-control" id="cidade" name="cidade" required>
         </div>
 
         <div class="form-group">
             <label for="uf">Estado</label>
-            <input type="text" class="form-control" id="uf" name="uf" maxlength="2" require>
+            <input type="text" class="form-control" id="uf" name="uf" maxlength="2" required>
         </div>
 
         <button type="submit" class="btn btn-primary">Salvar</button>
